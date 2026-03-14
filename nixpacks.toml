@@ -1,0 +1,12 @@
+# Railway usa Nixpacks; así aseguramos que se compile TypeScript y se ejecute el bot.
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["corepack enable", "pnpm install"]
+
+[phases.build]
+cmds = ["pnpm run build"]
+
+[start]
+cmd = "node dist/index.js"
