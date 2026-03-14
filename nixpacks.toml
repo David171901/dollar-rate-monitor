@@ -1,4 +1,7 @@
-# Railway usa Nixpacks; así aseguramos que se compile TypeScript y se ejecute el bot.
+# Railway usa Nixpacks; Node 20+ requerido (undici/File API).
+[variables]
+NODE_VERSION = "20"
+
 [phases.setup]
 nixPkgs = ["nodejs_20"]
 

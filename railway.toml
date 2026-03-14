@@ -1,0 +1,6 @@
+# Force Node.js 20 at runtime (required for undici/File API)
+[build]
+builder = "nixpacks"
+
+[variables]
+NIXPACKS_NODE_VERSION = "20"
